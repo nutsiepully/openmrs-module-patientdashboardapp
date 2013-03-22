@@ -1,5 +1,5 @@
 <%
-	ui.decorateWith("patientDashboardApp", "standardEmrPage")
+	ui.decorateWith("uiCommonsLibrary", "standardEmrPage")
 
     def contextModel = [ patientId: patient.id, visitId: 5 ]
 %>

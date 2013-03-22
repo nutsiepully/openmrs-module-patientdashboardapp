@@ -1,5 +1,5 @@
 <%
-    ui.decorateWith("patientDashboardApp", "standardEmrPage")
+    ui.decorateWith("uiCommonsLibrary", "standardEmrPage")
 %>
 
 ${ ui.includeFragment("patientDashboardApp", "widget/findPatient") }
