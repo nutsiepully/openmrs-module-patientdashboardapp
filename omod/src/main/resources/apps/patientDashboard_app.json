@@ -1,0 +1,16 @@
+[
+    {
+        "id": "patientDashboardApp",
+        "description": "Patient Dashboard Application",
+        "extensionPoints": [
+            {
+                "id": "activeVisitActions",
+                "description": "Actions for Visit"
+            },
+            {
+                "id": "globalActions"
+            }
+        ],
+        "contextModel": [ "patientId", "activeVisitId" ]
+    }
+]
