@@ -20,13 +20,5 @@
         "extensionParams": {
             "iconUrl": "/xray/icon"
         }
-    },
-    {
-        "id": "gotoPatientExtension",
-        "appId": "radiologyApp",
-        "extensionPointId": "patientLinks",
-        "type": "link",
-        "label": "Goto Patient",
-        "url": "module/patientDashboardApp/patient.page?patientId={{patientId}}"
     }
 ]
