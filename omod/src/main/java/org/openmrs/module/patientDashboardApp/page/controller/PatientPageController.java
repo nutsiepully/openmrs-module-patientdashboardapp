@@ -36,11 +36,11 @@ public class PatientPageController {
         List<Extension> globalExtensions = appFrameworkService.getAllExtensions("patientDashboardApp", "globalActions");
         List<Extension> activeVisitExtensions = appFrameworkService.getAllExtensions("patientDashboardApp", "activeVisitActions");
 
-        globalExtensions.add(new Extension("Start Visit", "patientDashboardApp", "globalActions", "link", "Start Visit", "url", 0));
-        globalExtensions.add(new Extension("Request Paper Record", "app1", "extensionPoint2", "link", "Request Paper Record", "provider?patientId={{patientId}}", 1));
-
-        activeVisitExtensions.add(new Extension("Order X-Ray", "app2", "extensionPoint1", "link", "Order X-Ray",
-                                    "/radiologyApp/orderXray?patientId={{patientId}}&visitId={{visitId}}", 2));
+//        globalExtensions.add(new Extension("Start Visit", "patientDashboardApp", "globalActions", "link", "Start Visit", "url", 0));
+//        globalExtensions.add(new Extension("Request Paper Record", "app1", "extensionPoint2", "link", "Request Paper Record", "provider?patientId={{patientId}}", 1));
+//
+//        activeVisitExtensions.add(new Extension("Order X-Ray", "app2", "extensionPoint1", "link", "Order X-Ray",
+//                                    "/radiologyApp/orderXray?patientId={{patientId}}&visitId={{visitId}}", 2));
 
         model.addAttribute("patient", patient);
         model.addAttribute("globalExtensions", globalExtensions);

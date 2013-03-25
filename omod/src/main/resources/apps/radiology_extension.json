@@ -1,0 +1,32 @@
+[
+    {
+        "id": "orderXrayExtension",
+        "appId": "patientDashboardApp",
+        "extensionPointId": "activeVisitActions",
+        "type": "link",
+        "label": "Order XRay",
+        "url": "moduleResources/radiologyapp/xray.html?patientId={{patientId}}&visitId={{visitId}}",
+        "extensionParams": {
+            "iconUrl": "/xray/icon"
+        }
+    },
+    {
+        "id": "requestPaperRecord",
+        "appId": "patientDashboardApp",
+        "extensionPointId": "globalActions",
+        "type": "link",
+        "label": "Request Paper Record",
+        "url": "requestPaperRecord?patientId={{patientId}}",
+        "extensionParams": {
+            "iconUrl": "/xray/icon"
+        }
+    },
+    {
+        "id": "gotoPatientExtension",
+        "appId": "radiologyApp",
+        "extensionPointId": "patientLinks",
+        "type": "link",
+        "label": "Goto Patient",
+        "url": "module/patientDashboardApp/patient.page?patientId={{patientId}}"
+    }
+]
