@@ -45,7 +45,7 @@
 
         <dependency>
             <groupId>org.openmrs.module</groupId>
-            <artifactId>uiCommonsLibrary-api</artifactId>
+            <artifactId>uicommons-api</artifactId>
         </dependency>
 
         <!-- Begin OpenMRS core -->
