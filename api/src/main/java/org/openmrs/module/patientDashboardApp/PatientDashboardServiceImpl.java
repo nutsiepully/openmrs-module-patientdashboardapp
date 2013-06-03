@@ -59,7 +59,7 @@ public class PatientDashboardServiceImpl extends BaseOpenmrsService implements P
 
     private Criteria buildCriteria(String query, Criteria criteria) {
         return new PatientSearchCriteria(sessionFactory, criteria).prepareCriteria(query,
-                null, new ArrayList<PatientIdentifierType>(), true, true);
+                null, new ArrayList<PatientIdentifierType>(), true, true, true);
 
 //        if (query.matches(".*\\d.*")) {
 //            // has at least one digit, so treat as an identifier

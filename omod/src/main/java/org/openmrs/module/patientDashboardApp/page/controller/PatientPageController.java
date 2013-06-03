@@ -14,8 +14,7 @@
 package org.openmrs.module.patientDashboardApp.page.controller;
 
 import org.openmrs.Patient;
-import org.openmrs.api.context.Context;
-import org.openmrs.module.appframework.api.AppFrameworkService;
+import org.openmrs.module.appframework.service.AppFrameworkService;
 import org.openmrs.module.appframework.domain.Extension;
 import org.openmrs.ui.framework.annotation.SpringBean;
 import org.openmrs.ui.framework.page.PageModel;
@@ -33,8 +32,8 @@ public class PatientPageController {
 	                PageModel model,
                     @SpringBean AppFrameworkService appFrameworkService) {
 
-        List<Extension> globalExtensions = appFrameworkService.getAllExtensions("patientDashboardApp", "globalActions");
-        List<Extension> activeVisitExtensions = appFrameworkService.getAllExtensions("patientDashboardApp", "activeVisitActions");
+        List<Extension> globalExtensions = appFrameworkService.getAllExtensions("globalActions");
+        List<Extension> activeVisitExtensions = appFrameworkService.getAllExtensions("activeVisitActions");
 
         model.addAttribute("patient", patient);
         model.addAttribute("globalExtensions", globalExtensions);
